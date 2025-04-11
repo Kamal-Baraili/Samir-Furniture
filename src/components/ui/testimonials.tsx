@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { ArrowProps } from "../../types/react-slick";
+import { motion } from "motion/react";
 
 const Testimonials = () => {
   function SampleNextArrow({ onClick }: ArrowProps) {
@@ -55,9 +56,14 @@ const Testimonials = () => {
       <div className="overflow-hidden mt-20">
         <div className="bg-[#e7cb95] w-full  h-[60vh] bg-bg lg:h-[80vh] mx-auto pt-10 md:pt-20">
           <div className="mb-6 ">
-            <p className="text-6xl text-new text-center font-ursb capitalize ">
-              Testimonials
-            </p>
+            <motion.p
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 100 }}
+              transition={{ type: "spring", duration: 1 }}
+              className="text-6xl text-new text-center font-ursb capitalize "
+            >
+              What our Clients Say?
+            </motion.p>
           </div>
           <div className="relative">
             <div className="">

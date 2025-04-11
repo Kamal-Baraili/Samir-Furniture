@@ -11,13 +11,13 @@ const Nav = () => {
           <div className="flex gap-30 items-center">
             {headerMenu.map((k, i) => (
               <ul key={i}>
-                <li className="text-xl hover:text-primary cursor-pointer">
+                <li className="text-xl hover:text-primary hover:underline underline-offset-8 cursor-pointer">
                   {k}
                 </li>
               </ul>
             ))}
           </div>
-          <div className="px-4 py-2 bg-[#0CC143] flex items-center gap-3 rounded-4xl cursor-pointer text-white hover:text-[#000000] border border-[#02220c] hover:border-[primary]">
+          <div className="px-4 py-2 bg-[#0CC143] flex items-center gap-3 rounded-4xl cursor-pointer text-white hover:text-[#000000] border border-[#02220c] hover:border-[primary] hover:scale-[1.1] transition-all ease-in-out">
             <span className="">Whatsapp</span>
             <img
               className="animate-bounce"

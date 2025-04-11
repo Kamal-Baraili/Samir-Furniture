@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import { motion } from "motion/react";
 
 const Hero = () => {
   const settings = {
@@ -38,10 +39,22 @@ const Hero = () => {
         <div className="w-full h-[75vh] bg-[black] opacity-60 absolute inset-0"></div>
         <div className="w-full h-[75vh] absolute inset-0 flex justify-center items-center">
           <div className="flex flex-col gap-10">
-            <h1 className="text-secondary text-8xl">Elevate Your Space</h1>
-            <p className="text-white text-center text-2xl">
+            <motion.h1
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 100 }}
+              transition={{ type: "spring" }}
+              className="text-secondary text-8xl"
+            >
+              Elevate Your Space
+            </motion.h1>
+            <motion.p
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 100 }}
+              transition={{ type: "linear", delay: 1 }}
+              className="text-white text-center text-2xl"
+            >
               Choose a piece of decor as your need
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>
