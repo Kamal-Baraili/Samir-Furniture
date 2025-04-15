@@ -1,5 +1,5 @@
-export const headerMenu = ["Home", "About", "Contact"];
-export const navMenu = [
+export const navMenu = ["Home", "About", "Contact"];
+export const categoryMenu = [
   "Bedding",
   "Sofas",
   "Cupboards",
