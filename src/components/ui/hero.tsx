@@ -43,7 +43,7 @@ const Hero = () => {
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 100 }}
               transition={{ type: "spring" }}
-              className="text-secondary text-8xl"
+              className="text-secondary text-4xl md:text-6xl lg:text-8xl text-center"
             >
               Elevate Your Space
             </motion.h1>
@@ -51,7 +51,7 @@ const Hero = () => {
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 100 }}
               transition={{ type: "linear", delay: 1 }}
-              className="text-white text-center text-2xl"
+              className="text-white text-center text-md md:text-xl lg:text-2xl"
             >
               Choose a piece of decor as your need
             </motion.p>
