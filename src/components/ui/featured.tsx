@@ -11,12 +11,12 @@ const Featured = () => {
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 100 }}
             transition={{ type: "linear", duration: 1 }}
-            className="py-10 text-4xl text-center uppercase"
+            className="py-10 text-2xl md:text-3xl lg:text-4xl text-center uppercase"
           >
             Featured Products
           </motion.h2>
         </div>{" "}
-        <div className="w-10/11 mx-auto p-4 flex justify-center gap-10 flex-wrap">
+        <div className="w-full lg:w-10/11 mx-auto p-4 flex justify-center gap-10 flex-wrap">
           {featuredCardData.map((key, index) => (
             <div key={index}>
               <ProductCard
